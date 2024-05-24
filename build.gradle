@@ -1,0 +1,20 @@
+plugins {
+    id 'application'
+}
+apply plugin: 'java'
+
+sourceSets {
+    main {
+        java {
+            srcDir("src")
+        }
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+application {
+    mainClassName = "org.example.RSAMain"
+}
